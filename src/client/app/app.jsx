@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Window from "./components/window.jsx";
+import Calculator from "./components/calculator.jsx";
 
 class App extends React.Component {
 
     render () {
         return (
-            <Window/>
+            <Calculator/>
         );
     }
 
