@@ -4,11 +4,24 @@ import NumPad from "./numpad.jsx";
 
 class Calculator extends React.Component {
 
+    constructor () {
+        super();
+        this.state = {
+            value: "test"
+        };
+        this.changeValue = this.changeValue.bind(this);
+    }
+
+    changeValue = (text) => {
+        this.setState({value: text});
+    };
+
     render () {
         return (
             <div style={styles.calcContainer}>
-                <MForm/>
+                <MForm changeValue={this.changeValue}/>
                 <NumPad/>
+                {this.state.value}
             </div>);
     }
 

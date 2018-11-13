@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./button.jsx";
 
 class NumPad extends React.Component {
 
@@ -6,6 +7,7 @@ class NumPad extends React.Component {
         return (
             <div>
                 NumPad))
+                <Button/>
             </div>);
     }
 

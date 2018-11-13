@@ -4,27 +4,24 @@ class MForm extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-            value: "Hi users!"
+            value1: "Hi users!!"
         };
-
         this.handleChange = this.handleChange.bind(this);
     };
 
     handleChange = (event) => {
-        this.setState({
-            value: event.target.value
-        });
+        this.props.changeValue(event.target.value);
     };
 
     render () {
         return (
             <div>
                 <form>
-                    <input type="text" value={this.state.value} onChange={this.handleChange}>
+                    <input type="text" onChange={this.handleChange}>
                     </input>
                 </form>
                 <div>
-                    {this.state.value}
+                    {this.state.value1}
                 </div>
             </div>);
     }
