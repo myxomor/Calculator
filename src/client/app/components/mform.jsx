@@ -3,9 +3,6 @@ import React from "react";
 class MForm extends React.Component {
     constructor (props) {
         super(props);
-        this.state = {
-            value1: "Hi users!!"
-        };
         this.handleChange = this.handleChange.bind(this);
     };
 
@@ -17,12 +14,9 @@ class MForm extends React.Component {
         return (
             <div>
                 <form>
-                    <input type="text" onChange={this.handleChange}>
+                    <input type="text" value={this.props.value} onChange={this.handleChange}>
                     </input>
                 </form>
-                <div>
-                    {this.state.value1}
-                </div>
             </div>);
     }
 

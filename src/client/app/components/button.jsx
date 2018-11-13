@@ -2,11 +2,14 @@ import React from "react";
 
 class Button extends React.Component {
 
+    calculating = () => {
+        this.props.changeValue(Math.sin(this.props.value));
+    };
+
     render () {
         return (
-            <div>
-                Button
-            </div>);
+        <button onClick={this.calculating}>sin</button>
+        );
     }
 
 }

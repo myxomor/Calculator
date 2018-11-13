@@ -19,8 +19,9 @@ class Calculator extends React.Component {
     render () {
         return (
             <div style={styles.calcContainer}>
-                <MForm changeValue={this.changeValue}/>
-                <NumPad/>
+                <div>Works only with . when decimal matters</div>
+                <MForm changeValue={this.changeValue} value={this.state.value}/>
+                <NumPad changeValue={this.changeValue} value={this.state.value}/>
                 {this.state.value}
             </div>);
     }
