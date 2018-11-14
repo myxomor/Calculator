@@ -1,27 +1,27 @@
+/* eslint-disable no-trailing-spaces */
 import React from "react";
-import MForm from "./mform.jsx";
+import PanelIO from "./panelio.jsx";
 import NumPad from "./numpad.jsx";
 
 class Calculator extends React.Component {
 
-    constructor () {
-        super();
-        this.state = {
-            value: "test"
-        };
-        this.changeValue = this.changeValue.bind(this);
-    }
-
-    changeValue = (text) => {
-        this.setState({value: text});
+    state={
+        value: 0
     };
+    changeValue = (text) => this.setState({value: text});
 
     render () {
         return (
             <div style={styles.calcContainer}>
                 <div>Works only with . when decimal matters</div>
-                <MForm changeValue={this.changeValue} value={this.state.value}/>
-                <NumPad changeValue={this.changeValue} value={this.state.value}/>
+                <PanelIO
+                    changeValue={this.changeValue}
+                    value={this.state.value}
+                />
+                <NumPad
+                    changeValue={this.changeValue}
+                    value={this.state.value}
+                />
                 {this.state.value}
             </div>);
     }

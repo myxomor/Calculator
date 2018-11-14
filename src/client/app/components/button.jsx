@@ -1,14 +1,17 @@
+/* eslint-disable no-trailing-spaces */
 import React from "react";
 
 class Button extends React.Component {
 
-    calculating = () => {
-        this.props.changeValue(Math.sin(this.props.value));
+    sinCalc = () => {
+        const { value, changeValue } = this.props;
+        const sin = Math.sin(value);
+        changeValue(sin);
     };
 
     render () {
         return (
-        <button onClick={this.calculating}>sin</button>
+        <button onClick={this.sinCalc}>sin</button>
         );
     }
 
