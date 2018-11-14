@@ -4,9 +4,9 @@ import React from "react";
 class Button extends React.Component {
 
     sinCalc = () => {
-        const { value, changeValue } = this.props;
-        const sin = Math.sin(value);
-        changeValue(sin);
+        const { number, changeNumber } = this.props;
+        const sin = Math.sin(number);
+        changeNumber(sin);
     };
 
     render () {

@@ -8,8 +8,8 @@ class NumPad extends React.Component {
         return (
             <div>
                 <Button
-                    changeValue={this.props.changeValue}
-                    value={this.props.value}
+                    changeNumber={this.props.changeNumber}
+                    number={this.props.number}
                 />
             </div>);
     }

@@ -6,23 +6,23 @@ import NumPad from "./numpad.jsx";
 class Calculator extends React.Component {
 
     state={
-        value: 0
+        number: 0
     };
-    changeValue = (text) => this.setState({value: text});
+    changeNumber = (value) => this.setState({number: value});
 
     render () {
         return (
             <div style={styles.calcContainer}>
                 <div>Works only with . when decimal matters</div>
                 <PanelIO
-                    changeValue={this.changeValue}
-                    value={this.state.value}
+                    changeNumber={this.changeNumber}
+                    number={this.state.number}
                 />
                 <NumPad
-                    changeValue={this.changeValue}
-                    value={this.state.value}
+                    changeNumber={this.changeNumber}
+                    number={this.state.number}
                 />
-                {this.state.value}
+                {this.state.number}
             </div>);
     }
 

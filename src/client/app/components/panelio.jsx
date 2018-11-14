@@ -4,7 +4,7 @@ import React from "react";
 class PanelIO extends React.Component {
 
     handleChange = (event) => {
-        this.props.changeValue(event.target.value);
+        this.props.changeNumber(event.target.value);
     };
 
     render () {
@@ -13,7 +13,7 @@ class PanelIO extends React.Component {
                 <form>
                     <input
                         type="number"
-                        value={this.props.value}
+                        value={this.props.number}
                         onChange={this.handleChange}
                     >
                     </input>
