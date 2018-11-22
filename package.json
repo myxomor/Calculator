@@ -27,10 +27,11 @@
   "dependencies": {
     "axios": "^0.13.1",
     "babel-polyfill": "^6.9.1",
-    "react": "^15.2.1",
+    "npm": "^6.4.1",
+    "react": "^16.6.3",
     "react-addons-css-transition-group": "^15.3.1",
     "react-bootstrap": "^0.30.3",
-    "react-dom": "^15.2.1",
+    "react-dom": "^16.6.3",
     "react-redux": "^4.4.5",
     "react-router": "^2.6.0",
     "redux": "^3.5.2",
@@ -38,6 +39,7 @@
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
+    "@material-ui/core": "^3.5.1",
     "babel-core": "^6.10.4",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",
@@ -50,6 +52,9 @@
     "eslint-plugin-promise": "^2.0.0",
     "eslint-plugin-react": "^6.2.0",
     "eslint-plugin-standard": "^2.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "redux-devtools": "^3.3.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
