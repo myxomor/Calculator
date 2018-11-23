@@ -7,16 +7,21 @@ import PanelIO from "./panelio.jsx";
 import NumPad from "./numpad.jsx";
 
 const cardStyles = {
-    cardParent: {
-        display: "table-cell",
-        verticalAlign: "middle"
-    },
-
     card: {
-        maxWidth: 275,
-        backgroundColor: "red",
         display: "block",
+        minWidth: 250,
+        backgroundColor: "grey",
         margin: "auto"
+    },
+    cardParent: {
+        position: "absolute",
+        left: 0,
+        to: 0,
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
     }
     /*
     bullet: {
@@ -42,7 +47,8 @@ class Calculator extends React.Component {
 
     render () {
         const { classes } = this.props;
-        return (<div className="cardParent">
+        return (
+            <div className={classes.cardParent}>
             <Card className={classes.card}>
                 <PanelIO
                     changeNumber={this.changeNumber}

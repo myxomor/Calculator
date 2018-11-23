@@ -27,9 +27,11 @@ class NumPad extends React.Component {
         return (
             <div>
                 <Button
+                    size="small"
                     variant="contained"
                     className={classes.button}
-                    onClick={this.sinCalc}>
+                    onClick={this.sinCalc}
+                >
                     sin
                 </Button>
 
