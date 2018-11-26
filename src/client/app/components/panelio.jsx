@@ -1,4 +1,3 @@
-/* eslint-disable no-trailing-spaces */
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
@@ -35,18 +34,7 @@ class PanelIO extends React.Component {
                 variant="outlined"
             />
             </form>
-            /*             <div>
-                <form>
-                    <input
-                        type="number"
-                        value={this.props.number}
-                        onChange={this.handleChange}
-                    >
-                    </input>
-                </form>
-            </div>
-            */
-);
+        );
     }
 
 }
@@ -55,4 +43,3 @@ PanelIO.propTypes = {
 };
 
 export default withStyles(styles)(PanelIO);
-/* export default PanelIO;*/

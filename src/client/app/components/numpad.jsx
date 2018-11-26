@@ -1,6 +1,4 @@
-/* eslint-disable no-trailing-spaces */
 import React from "react";
-/* import Button from "./button.jsx"; */
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
@@ -18,7 +16,7 @@ class NumPad extends React.Component {
 
     sinCalc = () => {
         const { number, changeNumber } = this.props;
-        const sin = Math.sin(number);
+        const sin = Math.sin(number * 0.0174533);
         changeNumber(sin);
     };
 
@@ -34,7 +32,6 @@ class NumPad extends React.Component {
                 >
                     sin
                 </Button>
-
             </div>);
     }
 
@@ -45,7 +42,3 @@ NumPad.propTypes = {
 };
 
 export default withStyles(styles)(NumPad);
-/* <Button
-changeNumber={this.props.changeNumber}
-number={this.props.number}
-/>*/
